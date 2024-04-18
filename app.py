@@ -194,4 +194,4 @@ def toggle_dmarc_collapse(n_clicks, is_open):
     return is_open
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run()
