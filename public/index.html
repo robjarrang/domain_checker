@@ -24,6 +24,7 @@
     </div>
     <div class="col-md-4 align-self-end">
       <button type="button" class="btn btn-success w-100" onclick="addDomain()">Add to List</button>
+      <button id="toggleListButton" class="btn btn-secondary mt-3" onclick="toggleDomainList()">Show/Hide Domain List</button>
     </div>
   </div>
   
@@ -128,6 +129,17 @@
           <button class="btn btn-sm btn-outline-danger" onclick="removeDomain(${index})">Remove</button>
         </li>`
       ).join('');
+    }
+
+    function toggleDomainList() {
+      const listElement = document.getElementById('domainList');
+      if (listElement.style.display === 'none') {
+        listElement.style.display = 'block';
+        document.getElementById('toggleListButton').textContent = 'Hide Domain List';
+      } else {
+        listElement.style.display = 'none';
+        document.getElementById('toggleListButton').textContent = 'Show Domain List';
+      }
     }
 
     function renderResultCard(domain, selector, spf, dmarc, dkim) {
