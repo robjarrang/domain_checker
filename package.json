@@ -1,0 +1,25 @@
+{
+  "name": "domain_checker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://robjarrang@github.com/robjarrang/domain_checker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/robjarrang/domain_checker/issues"
+  },
+  "homepage": "https://github.com/robjarrang/domain_checker#readme",
+  "dependencies": {
+    "dns": "^0.2.2",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2"
+  }
+}
